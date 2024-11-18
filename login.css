@@ -86,23 +86,33 @@ input{
 }
 
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3b0baf;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all linear 160ms;
+.input-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
-button:hover {
-    background-color: #3b0baf;
+.button {
+    background-color: #3b0baf; 
+    color: white; 
+    border: none; 
+    padding: 12px 30px; 
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+
+.button:hover {
     transform: scale(1.1);
-    background-color: #3b0baf ;
-    
+    background-color: #3b0baf; 
+}
+
+
+.button:active {
+    transform: scale(1); 
 }
 
 
